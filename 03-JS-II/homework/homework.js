@@ -211,8 +211,7 @@ else {
       
       if(num3 > num1 && num3 > num2) 
            { 
-            let aumento = num3 + 1; 
-            return aumento;
+            return num3 + 1;
             } 
             else{
                return false;
@@ -256,6 +255,12 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí  
 
+  var array = [];
+ for (var i = 0; i < 11; i++){
+   var table = 6 * i;
+   array.push(table);
+ }
+ return array;
   
 }
 
