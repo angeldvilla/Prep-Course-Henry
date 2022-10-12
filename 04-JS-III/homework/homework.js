@@ -208,15 +208,15 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  const unarray = [];
-  for (let i = 0; i < 10; i++) {
+  var newarray = [];
+  for (var i = 0; i < 10; i++) {
     numero += 2;
-    unarray.push(numero[i]);
+    newarray.push(numero);
     if (numero === i) {
       return "Se interrumpió la ejecución";
     }
   }
-  return unarray;
+  return newarray;
 }
 
 function continueStatement(numero) {
@@ -226,6 +226,16 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  /* const NewArray = [];
+  for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+      continue;
+    } else {
+      numero i + 2;
+      NewArray.push(numero);
+    }
+  }
+  return NewArray; */
   const gg = [];
   for (let i = 0; i < 10; i++) {
     if (i === 5) {
